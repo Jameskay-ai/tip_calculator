@@ -1,21 +1,14 @@
 import streamlit as st
 
-st.set_page_config(page_title="Tip Calculator", layout="centered")
-
+# Page setup
+st.set_page_config(page_title="Tip Calculator", page_icon="💰")
 st.title("💰 Tip Calculator")
-st.markdown("Split the bill and calculate tips easily!")
 
-bill = st.number_input("💵 What was the total bill? (¥)", min_value=0.0, step=100.0)
-tip = st.selectbox("💡 What percentage tip would you like to give?", [10, 12, 15, 18, 20])
-people = st.number_input("🧑‍🤝‍🧑 How many people to split the bill?", min_value=1, step=1)
+# Input widgets
+bill_amount = st.number_input("Total Bill Amount ($)", min_value=0.01, value=50.00)
+tip_percentage = st.slider("Select tip percentage", min_value=0, max_value=30, value=15)
+num_people = st.number_input("Number of People", min_value=1, value=2)
 
-tip_as_percent = tip / 100
-total_tip_amount = bill * tip_as_percent
-total_bill = bill + total_tip_amount
-bill_per_person = total_bill / people
-final_amount = round(bill_per_person, 2)
-
-st.markdown("---")
-st.subheader("🧾 Result")
-st.write(f"**Each person should pay:** ¥{final_amount}")
-
+# Display results
+st.metric(label="Per Person", value=f"${amount_per_person:.2f}")
+st.success(f"Each person should pay: ${amount_per_person:.2f}")
