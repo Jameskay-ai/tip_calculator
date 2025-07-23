@@ -2,8 +2,6 @@
 
 Welcome to the **Python Portfolio Project** by **James Kay** — an interactive **tip calculator** built with Streamlit, showcasing foundational Python concepts in a clean, responsive web interface.
 
-![Streamlit UI Screenshot](https://your-screenshot-url.com) <!-- Optional: Replace or delete this line if no screenshot -->
-
 ---
 
 ## 🚀 Live Demo
