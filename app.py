@@ -10,7 +10,7 @@ with st.sidebar:
     st.caption("To view other projects click here")
     st.markdown(
         """
-        <a href="https://https://jameskay-ai.github.io/python.html/" target="_blank">
+        <a href="https://https://jameskay-ai.github.io/python.html" target="_blank">
             <button style="background-color:#007BFF; color:white; padding:10px; border:none; border-radius:5px;">
                 Back to main
             </button>
