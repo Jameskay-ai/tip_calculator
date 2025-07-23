@@ -8,7 +8,16 @@ st.markdown("Explanation:")
 with st.sidebar:
     # Button to redirect to Python Landing page
     st.caption("To view other projects click here")
-    primary_btn = st.button(label="Back to main")
+    st.markdown(
+        """
+        <a href="https://jameskay-ai.github.io/" target="_blank">
+            <button style="background-color:#007BFF; color:white; padding:10px; border:none; border-radius:5px;">
+                Back to main
+            </button>
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
     st.divider()
     st.markdown("Category: Basic Level")
     st.markdown("""
