@@ -8,7 +8,6 @@ st.markdown("Explanation:")
 with st.sidebar:
     # Button to redirect to Python Landing page
     st.caption("To view other projects click here")
-    with st.sidebar:
     st.markdown(
         """
         <a href="https://jameskay-ai.github.io/" target="_blank">
