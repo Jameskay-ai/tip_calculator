@@ -42,8 +42,9 @@ st.markdown(
 )
 
 # Sidebar text display
-st.markdown("Explanation:")
+
 with st.sidebar:
+    st.markdown("Explanation:")
     # Button to redirect to Python Landing page
     st.caption("To view other projects click here")
     st.markdown(
