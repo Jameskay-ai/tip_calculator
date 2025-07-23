@@ -3,6 +3,36 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+
+# Inject custom CSS for sidebar and main page
+st.markdown(
+    """
+    <style>
+        /* Sidebar background and text color */
+        [data-testid="stSidebar"] {
+            background-color: #001f3f !important; /* Navy blue */
+            color: white;
+        }
+
+        /* Sidebar elements (text, headings) */
+        [data-testid="stSidebar"] * {
+            color: white !important;
+        }
+
+        /* Main content area text color */
+        .main, .block-container {
+            color: white;
+        }
+
+        /* Main page background */
+        .block-container {
+            background-color: #ffffff;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Sidebar text display
 st.markdown("Explanation:")
 with st.sidebar:
