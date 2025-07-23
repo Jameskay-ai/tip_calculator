@@ -173,6 +173,44 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+# Custom CSS styling
+st.markdown(
+    """
+    <style>
+        /* Sidebar background and text color */
+        [data-testid="stSidebar"] {
+            background-color: #001f3f !important; /* Navy blue */
+            color: white;
+        }
+
+        /* Sidebar elements (text, headings) */
+        [data-testid="stSidebar"] * {
+            color: white !important;
+        }
+
+        /* Main content area background and text color */
+        .main, .block-container {
+            background-color: #ffffff;
+            color: #001f3f !important; /* Navy blue text */
+        }
+
+        /* Adjust all headers and markdown inside main to navy */
+        .block-container h1, 
+        .block-container h2,
+        .block-container h3,
+        .block-container h4,
+        .block-container h5,
+        .block-container h6,
+        .block-container p,
+        .block-container li {
+            color: #001f3f !important;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # Sidebar text display
 st.markdown("Explanation:")
 with st.sidebar:
