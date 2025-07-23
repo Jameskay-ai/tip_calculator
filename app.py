@@ -44,8 +44,7 @@ st.markdown(
 # Sidebar text display
 
 with st.sidebar:
-    st.markdown("Explanation:")
-    # Button to redirect to Python Landing page
+        # Button to redirect to Python Landing page
     st.caption("To view other projects click here")
     st.markdown(
         """
@@ -58,6 +57,7 @@ with st.sidebar:
         unsafe_allow_html=True
     )
     st.divider()
+    st.markdown("PROJECT DETAILS:")
     st.markdown("Category: Basic Level")
     st.markdown("""
     ## **Key Concepts Covered:**
