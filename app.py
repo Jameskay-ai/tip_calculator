@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 
-# Inject custom CSS for sidebar and main page
+# Custom CSS styling
 st.markdown(
     """
     <style>
@@ -19,14 +19,22 @@ st.markdown(
             color: white !important;
         }
 
-        /* Main content area text color */
+        /* Main content area background and text color */
         .main, .block-container {
-            color: white;
+            background-color: #ffffff;
+            color: #001f3f !important; /* Navy blue text */
         }
 
-        /* Main page background */
-        .block-container {
-            background-color: #ffffff;
+        /* Adjust all headers and markdown inside main to navy */
+        .block-container h1, 
+        .block-container h2,
+        .block-container h3,
+        .block-container h4,
+        .block-container h5,
+        .block-container h6,
+        .block-container p,
+        .block-container li {
+            color: #001f3f !important;
         }
     </style>
     """,
