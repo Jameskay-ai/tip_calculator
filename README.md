@@ -8,7 +8,7 @@ Welcome to the **Python Portfolio Project** by **James Kay** — an interactive 
 
 ## 🚀 Live Demo
 Check out the deployed app here:  
-👉 [Click to open on Streamlit Cloud](https://share.streamlit.io/your-app-link)
+👉 [Click to open on Streamlit Cloud][(https://jk-tip-calculator.streamlit.app/)
 
 ---
 
