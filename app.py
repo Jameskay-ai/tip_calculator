@@ -11,7 +11,7 @@ with st.sidebar:
     st.markdown(
         """
         <a href="https://jameskay-ai.github.io/" target="_blank">
-            <button style="background-color:#007BFF; color:white; padding:10px; border:none; border-radius:5px;">
+            <button style="background-color:#004080; color:white; padding:10px; border:none; border-radius:5px;">
                 Back to main
             </button>
         </a>
